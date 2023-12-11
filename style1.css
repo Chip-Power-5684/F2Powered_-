@@ -1,0 +1,282 @@
+/* テスト */
+section {
+    height: 80vh;
+  }
+  
+  .video-container {
+    /* ビデオの位置調整のために指定 */
+    position: relative;
+  
+    width: 100%;
+    height: 100%;
+    /* ビデオが画面からはみ出ないようにする */
+    overflow: hidden;
+    /* オーバーレイをかける場合は指定する */
+    
+    background: linear-gradient(rgba(20, 20, 20, 0),rgba(20, 20, 20, 1));
+    
+  }
+  
+  .video-container video {
+    position: absolute;
+    /* ビデオの真ん中が表示されるようにする */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    min-width: 100%;
+    min-height: 100%;
+    /* 後ろにずらして文字が隠れないようにする */
+    z-index: -2;
+  }
+  
+  .contents-container {
+    position: absolute;
+    color: #ffffff;
+    z-index: -1;
+    /* 今回は適当に配置しています */
+    padding: 20px 50px;
+  }
+
+/* ヘッダー */
+header {
+  position: fixed; /*** ← fixedで固定 ***/
+  width: 100%; 
+  height: 90px; 
+  background: #000000; 
+  padding: 20px 60px; 
+  box-sizing: border-box;
+  top: 0; 
+  left: 0; 
+  display: flex; 
+  align-items: center; 
+  z-index: 1;
+
+ /* ロゴとメニューを横並びにする */
+  display: flex; 
+  justify-content:space-between;
+}
+
+header .nav .menu {
+  display: flex; 
+}
+
+header .nav .menu li {
+  list-style: none; 
+  margin-left: 70px;
+}
+
+header .nav .menu li a{
+ color: #ffcc00;
+ font-weight:bold;
+ text-decoration: none;
+}
+
+
+
+
+.mouse {
+  margin: 30px 0px 0px 30px;
+  position   : relative;
+}
+.mouse:hover .word {
+  display: inline;
+}
+
+/*色は適当です。*/
+.word {
+  position   : absolute;
+  display: none;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  background-color:rgb(255, 255, 255);
+  width:200px;
+  top: 50px;
+  left: -20px;
+  font-size: 24px;
+  text-align: center;
+  z-index: 3;
+}
+/* ヘッダーはここまで */
+
+/* すべてのページに適用される設定 */
+body {background-color: rgb(20, 20, 20)}
+
+
+/* すべてのページに適用 - ヘッダー */
+
+.h1 {
+    color: #2b87ff;/*文字色*/
+    padding: 0.5em 0;/*上下の余白*/
+    border-top: solid 3px #e1ff00;/*上線*/
+    border-bottom: solid 3px #e1ff00;/*下線*/
+  }
+
+  .h1 {
+    color: #2b87ff;/*文字色*/
+    padding: 0.5em 0;/*上下の余白*/
+    border-top: solid 3px #e1ff00;/*上線*/
+    border-bottom: solid 3px #e1ff00;/*下線*/
+  }  
+
+  .seotext_04 {
+    background:linear-gradient(transparent 0%, rgb(20, 20, 20) 100%);
+    position: relative; top: 20px;
+  }
+
+    .seotext_03 {
+        border-top: solid 100px #a6ff00; /* 色：グレー */
+      }
+
+/* すべてのページに適用 - 目次 */
+
+.font1 {font-size: 20px; font-family: 'Noto Sans JP', sans-serif;}
+
+.font2 {font-family: 'Noto Sans JP', sans-serif;}
+
+.size1 {font-size: 27px;}
+
+.size2 {font-size: 50px;}
+
+.bold {font-weight: 600; font-size: 27px; color: #ffffff;}
+
+h2 {
+    padding: 0.5em;/*文字周りの余白*/
+    color: #ffffff;/*文字色*/
+    background: #202020;/*背景色*/
+    border-top: solid 3px #516ab6;/*下線*/
+  }
+
+a {color: rgb(255, 255, 255);
+   text-decoration: none;}
+
+   .link1 a {
+    text-decoration: none;
+  }
+  
+  .link1 a:hover {
+    background:linear-gradient(transparent 80%, #0077ff 0%);
+  }
+
+.nav ul {
+  margin: 30px 0 0 0;
+  padding: 0;
+  list-style-type: "●";
+}
+/* すべてのページに適用 - ヒーロー */
+
+/* すべてのページに適用 - メイン */
+p {font-size: 110%;}
+
+h2 {
+    padding: 0.25em 0.5em;/*上下 左右の余白*/
+    color: #fff589;/*文字色*/
+    background: transparent;/*背景透明に*/
+    border-left: solid 5px #7db4e6;/*左線*/
+  }
+
+  .Tag_01 {
+    /*線の種類（二重線）太さ 色*/
+    border-bottom: double 5px #7db4e6;
+  } 
+  
+  .Tag_02 {
+    /*線の種類（二重線）太さ 色*/
+    border-bottom: double 2px #810000;
+  } 
+
+  .Tag_03 {
+    color: #fff589;
+  }
+
+  .Tag_04 {
+    color: #ffffff;
+  }
+
+  .seotext_05 {
+    background:linear-gradient(transparent 80%, #0077ff 0%);
+    }
+
+    .seotext_06 {
+        background:linear-gradient(transparent 80%, #ae0000 0%);
+        }    
+
+.heading-018 {
+        padding: .5em .7em;
+        border: 2px solid #2589d0;
+        box-shadow: 5px 5px #2589d0;
+        color: #ffffff;
+        }
+
+/* URLアニメーション */
+.content a{
+  font-weight:bold;
+  transition:.3s;
+  padding: 0.1em 0.3em;
+  color: #0091ff;
+  background-image: linear-gradient(rgb(20, 20, 20) 50%, #ff0077 50%);/*ホバー時の背景色*/
+  background-position: 0 0;
+  background-size: auto 200%;
+  }
+  .content a:hover{
+  color:#fff;/*文字色*/
+  transition:.3s;
+  background-position: 0 100%;
+  }
+    
+a[target=_blank][rel=nofollow] {
+  padding-right: 20px;
+  background: url(/images/index1_images/link_icon.png) right center/25px auto no-repeat;
+}
+
+.text_img {
+  width: 20px;
+  fill: #b00000;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+/* フッター */
+footer {
+  width: 100%;
+  height: 200px;
+  padding: 5px 0;
+  text-align: center;
+  color: #a52a2a;
+  background-image: url("sampleimg2.jpg");
+  background-position: center bottom;
+  background-size: cover;
+}
+footer .headline{
+    line-height: 100px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+.footer_nav-list {
+    line-height: 100px;
+    list-style: none;
+    font-weight: bold;
+}
+.footer_nav-list-item {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+footer {
+    width: 100%;
+    height: 100px;
+    
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.footer-coler {
+  color: #ffffff;
+}
+ul.footer-menu li {
+display: inline;
+}
+/* フッターはここまで */
+/* 個別のスタイル */
+/* index.html */
